@@ -1,0 +1,69 @@
+body{
+    height:100vh;
+    margin:0;
+}
+.supercontainer{
+    height:100%;
+}
+.supercontainer h1{
+    text-align:center;
+    margin:0;
+}
+.megacontainer{
+    display:flex;
+    justify-content: center;
+    height:calc(100% - 37px);
+    align-items: center;
+}
+.container{
+    width:400px;
+    height:400px;
+    font-size:0;
+}
+.container .microcontainer {
+    display:inline-block;
+    font-size:1rem;
+}
+.container .microcontainer div{
+    width:48px;
+    height:48px;
+    border:1px solid black;
+}
+.container .microcontainer div:hover{
+    background-color:red!important;
+}
+.container .microcontainer:nth-child(even) > div:nth-child(even){
+    background-color:peru
+}
+.container .microcontainer:nth-child(even) > div:nth-child(odd){
+    background-color:black;
+}
+.container .microcontainer:nth-child(odd) > div:nth-child(odd){
+    background-color:peru;
+}
+.container .microcontainer:nth-child(odd) > div:nth-child(even){
+    background-color:black;
+}
+.casella{
+    position:relative;
+}
+.top{
+    position:absolute;
+    top:-18px;
+    right:18px;
+}
+.left{
+    position:absolute;
+    left:-18px;
+    bottom:18px;
+}
+.right{
+    position:absolute;
+    right:-18px;
+    bottom:18px;
+}
+.bottom{
+    position:absolute;
+    bottom:-18px;
+    right:18px;
+}
